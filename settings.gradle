@@ -1,0 +1,6 @@
+rootProject.name = 'requestnow'
+include("requestnow-domain")
+include("requestnow-application")
+include("requestnow-infrastructure")
+include("requestnow-presentation")
+include("requestnow-shared")

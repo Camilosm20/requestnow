@@ -1,0 +1,28 @@
+plugins {
+    id 'java-library'
+}
+
+group = 'com.RequestNow'
+version = '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':requestnow-domain')
+    implementation project(':requestnow-shared')
+
+    implementation 'org.springframework:spring-context:6.1.14'
+    implementation 'net.sizovs:pipelinr:0.11'
+    implementation 'org.springframework:spring-tx:6.1.14'
+    compileOnly 'org.projectlombok:lombok:1.18.36'
+    annotationProcessor 'org.projectlombok:lombok:1.18.36'
+
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
