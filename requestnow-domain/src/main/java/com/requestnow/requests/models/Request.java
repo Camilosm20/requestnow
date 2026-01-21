@@ -16,29 +16,29 @@ import java.util.Objects;
 
 public final class Request {
 
-    private final RequestId id;
+    public final RequestId id;
 
-    private final UserId requestedBy;
-    private final UserId createdBy;
+    public final UserId requestedBy;
+    public final UserId createdBy;
 
-    private final RequestTypeId typeId;
-    private final RequestSubTypeId subTypeId;
+    public final RequestTypeId typeId;
+    public final RequestSubTypeId subTypeId;
 
-    private RequestSubject subject;
-    private RequestObservation observation;
+    public RequestSubject subject;
+    public RequestObservation observation;
 
-    private RequestStatus currentStatus;
-    private final List<StatusHistoryItem> statusHistory;
+    public RequestStatus currentStatus;
+    public final List<StatusHistoryItem> statusHistory;
 
-    private final List<Assignment> assignments;
+    public final List<Assignment> assignments;
 
-    private Rating rating;
-    private String ratingComment;
+    public Rating rating;
+    public String ratingComment;
 
-    private final Instant createdAt;
-    private Instant updatedAt;
+    public final Instant createdAt;
+    public Instant updatedAt;
 
-    private final List<DomainEvent> domainEvents;
+    public final List<DomainEvent> domainEvents;
 
     private Request(RequestId id, UserId requestedBy, UserId createdBy, RequestTypeId typeId, RequestSubTypeId subTypeId, RequestSubject subject, RequestObservation observation, RequestStatus currentStatus, List<StatusHistoryItem> statusHistory, List<Assignment> assignments, Rating rating, String ratingComment, Instant createdAt, Instant updatedAt) {
 
