@@ -13,6 +13,7 @@ dependencies {
 
     compileOnly 'org.projectlombok:lombok:1.18.36'
     annotationProcessor 'org.projectlombok:lombok:1.18.36'
+    implementation 'net.sizovs:pipelinr:0.11'
     api 'org.springframework.data:spring-data-commons:3.3.5'
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'

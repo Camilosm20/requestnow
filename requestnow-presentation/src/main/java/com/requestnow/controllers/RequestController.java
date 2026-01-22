@@ -12,12 +12,10 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/requests")
-public class RequestController {
-
-    private final Pipeline pipeline;
+public class RequestController extends ApiBaseController {
 
     public RequestController(Pipeline pipeline) {
-        this.pipeline = pipeline;
+        super(pipeline);
     }
 
     @PostMapping("create")
